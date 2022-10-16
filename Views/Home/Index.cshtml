@@ -6,3 +6,23 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<form action="/XML/save" 
+      enctype="multipart/form-data" 
+      method="post">
+    <dl>
+        <dt>
+            <label for="FileUpload_FormFile">File</label>
+        </dt>
+        <dd>
+            <input id="FileUpload_FormFile" type="file" 
+                name="file" />
+        </dd>
+    </dl>
+
+    <input class="btn" type="submit" value="Upload" />
+
+    <div style="margin-top:15px">
+        <output name="result"></output>
+    </div>
+</form>
